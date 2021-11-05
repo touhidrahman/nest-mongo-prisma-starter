@@ -19,3 +19,19 @@ Content-Type: application/json
 }
 
 ###
+POST http://localhost:3000/auth/check-username
+Content-Type: application/json
+
+{
+    "username": "a"
+}
+
+###
+POST http://localhost:3000/auth/check-email
+Content-Type: application/json
+
+{
+    "email": "abcd@b.com"
+}
+
+###

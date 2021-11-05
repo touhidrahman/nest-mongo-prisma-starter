@@ -1,14 +1,16 @@
-# Nest Hackathon Starter <a href="https://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" height="28px" alt="Nest Logo"/></a>
+## Credits
+Thanks to Ahmet Uysal for this great boilerplate which is [originally](https://github.com/ahmetuysal/nest-hackathon-starter) based on nest, prisma and postgres. I just adapted for mongodb. - Touhid
+
+
+# Nest Prisma Mongo Starter <a href="https://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" height="28px" alt="Nest Logo"/></a>
 
 This project contains boilerplate for creating APIs using [Nest](https://nestjs.com), a progressive [Node.js](http://nodejs.org) framework for building efficient and scalable server-side applications.
 
 It is mostly built to be used as a starting point in hackathons and implements common operations such as sign up, JWT authentication, mail validation, model validation and database access.
 
-You can also look at my [Angular Hackathon Starter](https://github.com/ahmetuysal/angular-hackathon-starter) template that shares the same contract with this API.
-
 ## Features
 
-1. **PostgreSQL with Prisma**
+1. **MongoDB with Prisma**
 
 2. **JWT Authentication**
 
@@ -45,16 +47,8 @@ This template uses Postgres by default. If you want to use another database, fol
 
 If you wish to use another database you will also have to edit the connection string on [`prisma/.env`](prisma/.env) file accordingly.
 
-Template includes three different environment options by default. Most of the time you will use the `local`
-environment when developing and `production` environment on production. You will need to fill out corresponding
-environment files in [`env`](env) directory.
-
 ```dosini
-DATABASE_HOST=__YOUR_DATABASE_URL__
-DATABASE_PORT=5432
-DATABASE_USERNAME=__YOUR_USERNAME__
-DATABASE_PASSWORD=__YOUR_PASSWORD__
-DATABASE_NAME=__YOUR_DATABASE__
+DATABASE_URL=__YOUR_DATABASE_URL__
 ```
 
 #### JWT Configurations
